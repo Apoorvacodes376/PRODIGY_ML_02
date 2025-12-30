@@ -1,113 +1,126 @@
 # PRODIGY_ML_02
 
- House Prices – Advanced Regression Techniques
- Project Overview
 
-This project focuses on predicting house sale prices using advanced regression techniques. The objective is to build robust machine learning models by applying feature engineering, ensemble learning, and proper evaluation metrics aligned with real-world practices.
+---
 
-The project is based on the well-known House Prices – Advanced Regression Techniques dataset and emphasizes improving prediction accuracy through data preprocessing and model optimization.
+#  House Prices – Advanced Regression Techniques
 
- Goal
+##  Project Overview
 
-To predict the SalePrice of houses using provided features and evaluate the model using Root Mean Squared Error (RMSE) on log-transformed prices, ensuring equal treatment of expensive and inexpensive houses.
+This project focuses on predicting house sale prices using advanced regression techniques. The goal is to build accurate and robust machine learning models by applying **feature engineering**, **ensemble learning**, and **proper evaluation metrics** aligned with real-world practices.
 
- Dataset Description
+The project is based on the **House Prices – Advanced Regression Techniques** dataset and emphasizes improving performance beyond basic linear regression models.
 
-The dataset contains detailed information about residential houses, including:
+---
 
-Structural features (area, rooms, floors)
+##  Objective
 
-Quality and condition indicators
+* Predict the **SalePrice** of houses using provided features.
+* Minimize prediction error using **Root Mean Squared Error (RMSE)** on **log-transformed SalePrice**.
+* Apply feature engineering and ensemble models to improve accuracy.
 
-Location-based and utility-related attributes
+---
 
-The target variable is:
+##  Dataset Description
 
-SalePrice – the final sale price of each house
+The dataset contains information related to residential homes, including:
 
- Tools & Technologies Used
+* Property size and layout
+* Quality and condition attributes
+* Location and utility-related features
 
-Python
+**Target Variable:**
 
-Pandas & NumPy – data manipulation
+* `SalePrice` – Final sale price of the house.
 
-Matplotlib & Seaborn – visualization
+---
 
-Scikit-learn – model building and evaluation
+##  Technologies Used
 
- Methodology
-1 Data Preprocessing
+* **Python**
+* **Pandas** – Data manipulation
+* **NumPy** – Numerical computations
+* **Matplotlib & Seaborn** – Data visualization
+* **Scikit-learn** – Model building and evaluation
 
-Handled missing values using appropriate imputation strategies
+---
 
-Encoded categorical variables
+##  Methodology
 
-Applied feature scaling where required
+### 1. Data Preprocessing
 
-Used log transformation on SalePrice to stabilize variance
+* Handled missing values using appropriate imputation strategies.
+* Converted categorical variables using encoding techniques.
+* Applied feature scaling where required.
+* Used **log transformation** on `SalePrice` to reduce skewness.
 
-2️ Feature Engineering
+### 2. Feature Engineering
 
-Selected and transformed relevant features
+* Selected relevant numerical and categorical features.
+* Reduced skewness in numerical variables.
+* Improved model learning through feature transformations.
 
-Reduced skewness in numerical variables
+### 3. Model Building
 
-Improved model performance through careful feature handling
+The following models were implemented:
 
-3️ Model Building
+* **Random Forest Regressor**
+* **Gradient Boosting Regressor**
 
-The following models were implemented and compared:
+These ensemble models were chosen due to their ability to capture complex, non-linear relationships.
 
-Random Forest Regressor
+---
 
-Gradient Boosting Regressor
+##  Evaluation Metric
 
-These ensemble models were chosen for their ability to capture non-linear relationships and interactions between features.
+* **Root Mean Squared Error (RMSE)** on **log(SalePrice)**
 
- Evaluation Metric
+This metric:
 
-RMSE (Root Mean Squared Error) on log(SalePrice)
+* Treats prediction errors of low- and high-priced houses equally.
+* Matches the official evaluation method used in the dataset challenge.
 
-This metric ensures:
+---
 
-Fair error comparison across price ranges
+##  Visualizations
 
-Alignment with the official competition evaluation method
+The following visualizations were used for evaluation and interpretation:
 
- Visualizations
+* Log(Actual) vs Log(Predicted) scatter plot
+* Residuals vs predicted values plot
+* Feature importance bar charts
+* Distribution of log-transformed SalePrice
 
-Log(Actual) vs Log(Predicted) scatter plots
+These plots help assess model accuracy, bias, and feature influence.
 
-Residual analysis plots
+---
 
-Feature importance bar charts
+##  Results & Key Learnings
 
-Distribution plots for target variable
+* Feature engineering significantly improves model performance.
+* Ensemble models outperform basic regression approaches.
+* Log transformation is essential for fair evaluation.
+* Visualization is critical for understanding model behavior.
 
-These visualizations help assess model accuracy, bias, and interpretability.
+---
 
- Results & Learnings
+##  Conclusion
 
-Feature engineering significantly improved prediction accuracy
+This project provided hands-on experience with **advanced regression techniques** and demonstrated the importance of preprocessing, feature engineering, and ensemble learning in real-world machine learning problems.
 
-Ensemble models outperformed basic regression approaches
+---
 
-Proper evaluation metrics are crucial for fair model assessment
+##  Future Enhancements
 
-Visualization plays a key role in understanding model behavior
+* Hyperparameter tuning using GridSearchCV or RandomizedSearchCV.
+* Advanced feature selection techniques.
+* Model ensembling for further accuracy improvements.
 
- Conclusion
+---
 
-This project provided hands-on experience with advanced regression techniques, reinforced the importance of data preprocessing, and improved understanding of ensemble learning methods. It reflects a real-world machine learning workflow from raw data to model evaluation.
+##  Acknowledgements
 
- Future Improvements
+This project is inspired by the **House Prices – Advanced Regression Techniques** dataset and is part of a structured learning task focused on applied machine learning.
 
-Hyperparameter tuning using GridSearch or RandomizedSearch
+---
 
-Incorporation of additional engineered features
-
-Model ensembling for further performance gains
-
- Acknowledgements
-
-Dataset and problem inspired by Kaggle’s House Prices – Advanced Regression Techniques challenge.
